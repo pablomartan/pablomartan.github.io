@@ -1,0 +1,63 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    
+    margin: 10px;
+
+    order: 3;
+}
+
+.post {
+    text-align: justify;
+    margin: auto;
+}
+
+.post-pic {
+    display: none;
+}
+
+.figures {
+    margin: 1em;
+}
+
+.figpic {
+    display: block;
+    width: 66%;
+    margin: auto;
+}
+
+.caption {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.author {
+    width: 100%;
+    background: lightgrey;
+    padding: 10px;
+    margin: 1em;
+}
+
+.auth-photo {
+    width: auto;
+    max-width: 60px;
+    border-radius: 100%;
+}
+
+.auth-name, .auth-title, .auth-posit, .auth-bio {
+    margin-bottom: 0.8em;
+}
+
+@media (min-width: 900px) {
+    .content {
+        justify-content: right;
+        margin: auto;
+    }
+
+    .post {
+        width: 80%;
+    }
+}

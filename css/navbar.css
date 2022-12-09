@@ -1,0 +1,50 @@
+nav {
+    display: inline;
+    margin: 5px;
+
+    order: 2;
+}
+
+.navtitle {
+    display: none;
+}
+
+nav a {
+   margin: 5px; 
+}
+
+.separator {
+    display: inline;
+    margin: 5px;
+}
+
+@media (min-width: 350px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+/* PUT NAVBAR ON THE SIDE IN THE BIGGER SCREEN SIZES */
+@media (min-width: 900px) {
+    nav {
+        flex-direction: column;
+        align-self: flex-start;
+        grid-area: navbar;
+        align-self: top;
+        margin: 20px;
+    }
+
+    .navtitle {
+        display: block;
+    }
+
+    .separator {
+        display: none;
+    }
+
+    nav a {
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,135 @@
+@import url('buttons.css');
+@import url('navbar.css');
+
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: goldenrod;
+    list-style: none;
+}
+
+h1, h2, h3 {
+    font-family: "Calisto MT", "Georgia", serif;
+    margin-bottom: 8px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 900;
+    font-variant: small-caps;;
+    color: saddlebrown;
+}
+
+h2 {
+    font-size. 2em;
+    font-weight: 700;
+    color: sienna;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+p {
+    font-size: 1em;
+    margin: 1.2em;
+    text-align: justify;
+}
+
+blockquote {
+    display: inline;
+    text-align: justify;
+    font-style: italic;
+    margin: 3em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+    font-family: "Open Sans", "Trebuchet MS", sans-serif;
+    font-size: 16px;
+} 
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+    order: 1;
+}
+
+.blog-logo {
+    height: 40px;
+    margin: 10px;
+}
+
+.content {
+    order: 3;
+}
+
+.auth-name {
+    color: grey;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+    background-color: #555;
+    color: lightgrey;
+    padding: 8px;
+
+    order: 4;
+}
+
+.copyright-notice {
+    display: inline;
+    width: 50%;
+    margin: 8px;
+}
+
+.interesting-links {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin 8px;
+}
+
+.interesting-links > .unlist {
+    list-style: none;
+}
+
+@media (min-width: 900px) {
+    .container {
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        "content content navbar"
+        "footer footer footer";
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .content {
+        grid-area: content;
+    }
+
+    .footer {
+        grid-area: footer;
+    }
+}

@@ -1,0 +1,75 @@
+.card {
+    display: grid;
+    grid-template-areas:
+        "picture picture"
+        "post-title post-title"
+        "author auth-pic"
+        "summary summary"
+        "sharing sharing";
+    grid-gap: 10px;
+    border: 2px solid lightgrey;
+    box-shadow: 0 5px 5px 0 lightgrey, 0 10px 15px 0 lightgrey;
+    min-width: 200px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.post-pic {
+    grid-area: picture;
+    align-self: start;
+    width: 100%;
+    max-height: 100%;
+}
+
+.post-info {
+    min-height: 50%;
+    padding: 8px;
+}
+
+.post-title {
+    grid-area: post-title;
+    margin-top: 10px;
+}
+
+.auth-photo {
+    grid-area: auth-pic;
+    display: none;
+}
+
+.author-name {
+    display: block;
+    text-align: center;
+    grid-area: author;
+}
+
+summary {
+    display: inline;
+    grid-area: summary;
+    width: 95%;
+    text-align: justify;
+    margin: 10px;
+}
+
+.social {
+    grid-area: sharing;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+@media (min-width: 900px) {
+    .card {
+        max-width: 450px;
+    }
+
+    .auth-photo {
+        display: inline;
+        min-width: 30px;
+        max-width: 60px;
+        min-height: 30px;
+        max-height: 60px;
+        width: auto;
+        height: auto;
+        border-radius: 100%;
+    }
+}

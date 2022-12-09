@@ -1,0 +1,46 @@
+.sharing {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px;
+}
+
+button {
+    all: unset;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+}
+
+.tw {
+    background: #1da1f2;
+}
+
+.fb {
+    background: #4267b2;
+}
+
+.lnkdin {
+    background: #0077b5;
+}
+
+.subbut {
+    background: #ce915f;
+    margin-left: 10px;
+}
+
