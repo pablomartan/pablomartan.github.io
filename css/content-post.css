@@ -19,7 +19,7 @@
     display: none;
 }
 
-.figures {
+figure {
     margin: 1em;
 }
 
@@ -29,9 +29,10 @@
     margin: auto;
 }
 
-.caption {
-    margin-top: 10px;
+figcaption {
+    display: inline;
     text-align: center;
+    margin-top: 10px;
 }
 
 .author {
