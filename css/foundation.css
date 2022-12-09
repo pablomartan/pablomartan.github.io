@@ -17,9 +17,9 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 900;
-    font-variant: small-caps;;
+    font-variant: small-caps;
     color: saddlebrown;
 }
 
@@ -106,10 +106,6 @@ blockquote {
     justify-content: center;
     width: 50%;
     margin 8px;
-}
-
-.interesting-links > .unlist {
-    list-style: none;
 }
 
 @media (min-width: 900px) {
