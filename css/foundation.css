@@ -59,7 +59,7 @@ blockquote {
     font-size: 16px;
 } 
 
-.header {
+header {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -83,7 +83,7 @@ blockquote {
 }
 
 /* FOOTER */
-.footer {
+footer {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -117,7 +117,7 @@ blockquote {
         "footer footer footer";
     }
 
-    .header {
+    header {
         grid-area: header;
     }
 
@@ -125,7 +125,7 @@ blockquote {
         grid-area: content;
     }
 
-    .footer {
+    footer {
         grid-area: footer;
     }
 }
