@@ -42,6 +42,7 @@ figcaption {
 }
 
 .auth-photo {
+    display: inline;
     width: auto;
     max-width: 60px;
     border-radius: 100%;
